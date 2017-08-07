@@ -1,0 +1,149 @@
+body{
+    background-color: #444;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+#wrapper{
+    color: #d8a80a;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+
+#logo{
+    background-color: #8cc1f5;
+    border-bottom: 2px solid #d8a80a;
+}
+
+div#logo > img{
+    height: 200px;
+    width: 200px;
+}
+
+#version{
+    float: left;
+    padding-left: 5px;
+}
+
+#form{
+    height: 500px;
+    float: left;
+    padding-top: 50px;
+    background-color: #444;
+    width: 40%;
+}
+
+#v1{
+    cursor: pointer;
+}
+
+#v2{
+    cursor: pointer;
+}
+
+#version input:disabled{
+    background-color: green;
+    color: white;
+}
+
+#version input:enabled{
+    background-color: red;
+    color: white; 
+}
+
+#selector{
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+}
+
+#selector input[type="submit"]{
+    background-color: white;
+    border-radius: 4px; 
+    color: black;
+    cursor: pointer;
+    border: 2px solid #008CBA;
+    height: 50px;
+    width: 75px;
+    transition-duration: 0.4s;
+}
+
+#selector input[type="submit"]:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+#selector input[type="submit"]:focus{
+    background-color: #008CBA;
+    color: white;
+}
+
+.data_b{
+    background-color: white !important;
+    border-radius: 4px !important;
+    color: black !important; 
+    border: 2px solid #f44336 !important;
+    transition-duration: 0.4s !important;
+}
+
+.data_b:hover{
+    background-color: #f44336 !important;
+    color: white !important;
+}
+
+#button_add{
+    background-color: white;
+    border: 2px solid #d8a80a;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+    height: 26px;
+    width: 78px;
+    transition-duration: 0.4s;
+}
+
+#button_add:hover{
+    background-color: #d8a80a;
+    color: white;
+}
+
+#pick_player{
+    width: 200px;
+}
+
+.stats{
+    width: 50px;
+}
+
+#result{
+    width: 59.90%;
+    height: 600px;
+    float: left;
+    overflow: auto; 
+    text-align: center;
+    background-color: #333;
+    border-left: 1px solid #e2922f;
+}
+
+.crown{
+    width: 100px;
+    height: 75px;
+}
+
+.avatar{
+    width: 35px;
+    height: 35px;
+}
+
+#footer{
+    border-top: 1px solid #e2922f;
+    clear: both;
+    color: #008CBA !important;
+    font-size: 35px;
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}

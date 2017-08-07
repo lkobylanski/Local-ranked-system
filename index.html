@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-widthm initial-scale=1" />
+
+    <title>Borzena Pro League</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin-ext" />
+
+    <script type="text/javascript" src="ladder.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="logo">
+            <div id="version">
+                <input type="submit" id="v1" value="Set to" title="Switch to set value to: mode" onclick="versionOne()" disabled>
+                <input type="submit" id="v2" value="Add/Remove" title="Switch to add / remove chosen value mode" onclick="versionTwo()">
+            </div>
+            <img src="img/bml.jpg" alt="BorzenaProLeague.logo" />
+        </div>
+        <div id="form">
+            <label for="pname">Player Name: </label>
+            <input type="text" name="plrname" id="pname" placeholder="New Player">
+            <input type="submit" value="Add Player" id="button_add" title="Adds new player" onclick="addPlayer()">
+            <br><br>
+            <p>Pick Player then edit - Wins / Kills / Style:</p>
+            <p>
+                <select id="pick_player">
+                    <option>Choose Player</option>
+                </select>
+                <input type="number" min="0" name="wins" placeholder="0" id="wins_num" class="stats">
+                <input type="number" min="0" name="kills" placeholder="0" id="kill_num" class="stats">
+                <input type="number" min="0" name="stylepts" placeholder="0" id="style_num" class="stats">
+                <input type="submit" value="Update" id="button_add" title="Updates data for selected player" onclick="upData()">
+                <input type="submit" value="Remove Player" id="button_add" title="Removes selected player" onclick="removePlayer()" style="width: 120px;">
+            </p>
+            <div id="selector">
+                <h2>Sort By:</h2>
+                <input id="win" class="sort" type="submit" value="Wins" title="Sort players by their total wins" onclick="sortByWin()">
+                <input id="kill" class="sort" type="submit" value="Kills" title="Sort players by their total kills" onclick="sortByKill()">
+                <input id="styl" class="sort" type="submit" value="Style" title="Sort players by their total style score" onclick="sortByStyle()">
+                <input id="best" class="sort" type="submit" value="Elo Score" title="Sort players by their ELO" onclick="sortByAll()">
+                <br>
+                <p>Save / Load / Remove Data:</p>
+                <input id="saver" class="sort data_b" type="submit" value="Save List" title="Saves players list localy" onclick="saveData()">
+                <input class="sort data_b" type="submit" value="Load List" title="Loads previously saved players list" onclick="clearDrop(); loadData()">
+                <input id="cleaner" class="sort data_b" type="submit" value="Remove List" title="Removes WHOLE players list PERMANETLY" onclick="removeData(); clearDrop()" style="font-size: 10px">
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="footer">
+            <p><i>Vipers unofficial ladder v1.7 - Made by Lukoby for <b> Borzena i Ja Snie Graczowie </b>team</i> &reg;<p>
+        </div>
+    </div>
+
+</body>
+
+</html>
